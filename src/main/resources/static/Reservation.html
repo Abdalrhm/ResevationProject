@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Resevation</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style1.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css">
+    <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+
+
+    <script src="/js/reservation.js"></script>
+</head>
+<body>
+
+<header class="header">
+    <img src="https://uwmode.nl/wp-content/uploads/2014/12/restaurant.jpeg">
+    <h1>Reservation</h1>
+    <h2>mangement</h2>
+
+</header>
+
+<div>
+    <label>First name:</label>
+    <input id="guestFirstName" type="text">
+
+    <label>Last name:</label>
+    <input id="guestLastName" type="text">
+
+    <label>Phone number:</label>
+    <input id=" telefoon" type="text">
+
+    <label>Date and time:</label>
+    <input id="dateNtime" type="datetime-local">
+
+
+    <label>Number of table:</label>
+    <input id="numOfTables" type="number">
+
+    <label>Number of guest:</label>
+    <input id="numberOfGuest" type="number">
+
+
+</div>
+
+<div id="buttons">
+    <button id="add">Addreservation</button>
+
+    <button id="getresavation">Get Reservation</button>
+
+</div>
+
+
+<table id="resvationform">
+    <thead>
+    <tr>
+        <th>Number Reservation</th>
+        <th>First name</th>
+        <th>Last name</th>
+        <th>Phone number</th>
+        <th>Date and time</th>
+        <th>Number of table</th>
+        <th>Number of guest</th>
+    </tr>
+    </thead>
+    <tbody id="resevationlist">
+
+    </tbody>
+</table>
+
+
+
+
+
+</body>
+</html>
